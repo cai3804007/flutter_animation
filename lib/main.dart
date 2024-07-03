@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animation/run_number/run_number.dart';
 import 'package:flutter_animation/staggered_animation/staggered_animation_page.dart';
+import 'package:flutter_animation/transition/transition.dart';
 import 'package:flutter_animation/tween_animation/tween_animation.dart';
 import 'package:flutter_animation/two_animation/two_animation_page.dart';
 
@@ -44,6 +46,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final listString = [
     'BasicAnimationPage',
+    'RunNumberPage',
+    'Transition',
     '补间动画TweenAnimationPage',
     '交错动画StaggeredAnimationPage',
     'CustomAnimationPage',
@@ -51,6 +55,8 @@ class _MyHomePageState extends State<MyHomePage> {
   ];
   final pages = [
     BasicAnimationPage(),
+    RunNumberPage(),
+    Transition(),
     TweenAnimationPage(),
     StaggeredAnimationPage(),
     CustomAnimationPage(),
